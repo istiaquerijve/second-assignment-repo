@@ -67,14 +67,35 @@
     flex-wrap: wrap;
     margin-left: 50px;
 }
+.main-section-2{
+    margin: 100px 100px;
+    display: flex;
+}
+#badge{
+    height: 300px;
+    width: 300px;
+    margin-left: -200px;
+    margin-bottom: 400px;
+}
+#section-2{
+    margin-top: 250px;
+    font-size: 40px;
+}
+
 
 /*responsive*/
 @media screen and (max-width: 576px){
-    .navbar, .header-section, .header-img, .main-section-1{
+    .navbar, .header-section, .header-img, .main-section-1, .main-section-2{
         flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-area: 20px;
     } 
     .card-item{
         display: grid;
         grid-template-columns: repeat(4, 2fr);
+    }
+    #badge{
+        text-decoration: none;
     }
 }
