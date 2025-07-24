@@ -27,6 +27,7 @@
 }
 .light{
     color: #8987A1;
+    font-size: 20px;
 }
 .display-flex{
     display: flex;
@@ -43,12 +44,37 @@
     display: flex;
     margin: 100px 100px;
 }
-
-
+/*main style */
+#plant{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+.main-section-1{
+    text-align: center;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    padding: 10px 35px;
+    font-size: 2.5rem;
+    font-weight: 1400px;
+    border: none;
+}
+.card-item{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
 
 /*responsive*/
 @media screen and (max-width: 576px){
-    .navbar, .header-section, .header-img{
+    .navbar, .header-section, .header-img, .main-section-1{
         flex-direction: column;
+    } 
+    .card-item{
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
     }
 }
