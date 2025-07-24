@@ -81,11 +81,56 @@
     margin-top: 250px;
     font-size: 40px;
 }
+#deal{
+    font-size: 40px;
+}
+.deal{
+    text-align: center;
+}
+.img-1{
+   background-image: url(../../github/B12A02-Responsive-Flowers/assets/deal-bloom.png);
+   background-repeat: no-repeat;
+   padding: 50px 50px;
+   border-radius: 20px;
+}
+.img-2{
+    background-image: url(../../github/B12A02-Responsive-Flowers/assets/deal-ana.png);
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+    border-radius: 20px;
+}  
+
+.img-box{
+
+    gap: 20px;
+}
+.img-3{
+    background-image: url(../../github/B12A02-Responsive-Flowers/assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 50px 50px;
+    margin: 0 auto;
+    width: 200px;
+    padding: 50px 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.img{
+    display: flex;
+    margin: 50px 100px;
+    gap: 20px;
+}
+
+.w{
+    color: white;
+}
+
 
 
 /*responsive*/
 @media screen and (max-width: 576px){
-    .navbar, .header-section, .header-img, .main-section-1, .main-section-2{
+    .navbar, .header-section, .header-img, .main-section-1, .main-section-2, .main-section-3{
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
@@ -97,5 +142,9 @@
     }
     #badge{
         text-decoration: none;
+    }
+    .img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
